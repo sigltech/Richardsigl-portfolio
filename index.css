@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    cursor: default;
 }
 
 body {
@@ -63,14 +64,19 @@ hr {
     position:absolute;
 }
 
-.flex-class {
+.flex-class-justify-space-between {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero.flex-class {
+.flex-class {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero.flex-class-justify-space-between {
     align-items: center;
     padding: 0;
     margin: 0;
@@ -127,18 +133,6 @@ a.navbar-link:focus {
 
 .select:not(.is-multiple):not(.is-loading)::after, .navbar-link:not(.is-arrowless)::after {
     border-color:#5C9EAD;
-}
-
-.card-width-modifier {
-    margin: 0 auto;
-    width: 45%;
-}
-
-.card {
-    width: 80%;
-    border: 2px solid red;
-    margin: 2rem;
-    
 }
 
 .right-flex-main {
@@ -229,10 +223,14 @@ p.text-align  {
 
 .img img {
     width: 100%;
-    border-width: 2px;
-    border-style: groove;
-    box-shadow: 0.5px 1px 2px 2px;
+    /* border-width: 2px;
+    border-style: groove; */
+    box-shadow: 0.5px 1px 25px 10px #3f3f3f;
     border-radius: 50px;
+}
+
+img.img-style:hover {
+    box-shadow: 0.5px 1px 25px 10px #4e4e4e;  
 }
 
 img.img-style.rounded {
@@ -247,7 +245,7 @@ img.img-style.rounded {
 
 .section-2 {
     position:relative;
-    height: 700px;
+    height: 2000px;
     background: #363636;
     color: #fff;
     margin: 0 auto;
@@ -256,10 +254,57 @@ img.img-style.rounded {
 .projects-h1 {
     color: #fff;
     font-size: 64px;
+    background-color: #3f3f3f;
 }
 
 .projects-title {
     padding-top: 0.2rem;
+}
+
+.media-content p {
+    color: #fff;
+}
+
+.card-width-modifier {
+    margin: 0 auto;
+    width: 45%;
+}
+
+.card {
+    box-shadow: 0.5px 1px 25px 10px #3f3f3f;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.card-subtitle {
+    margin-top: 0.5rem;
+    opacity: 0.5;
+}
+
+.card-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem auto;
+}
+
+.content {
+    height: inherit;
+    align-items: flex-end;
+}
+
+.lang-tags {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 1rem;
+}
+
+.code-lang-tags {
+    padding: 0.5rem;
+    border: 2px solid #747474;
+    border-radius: 2rem;
 }
 
 /* media queries */
