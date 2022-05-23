@@ -215,10 +215,11 @@ p.text-align  {
     z-index: 1;
 }
 
-.socials a img:hover,
-.socials a img:focus {
+.socials img:hover,
+.socials img:focus {
     border-radius: 50%;
     box-shadow: 0.5px 0px 2px 2px #fff;
+    cursor: pointer;
 }
 
 .img img {
@@ -245,7 +246,7 @@ img.img-style.rounded {
 
 .section-2 {
     position:relative;
-    height: 2000px;
+    height: 1000px;
     background: #363636;
     color: #fff;
     margin: 0 auto;
@@ -306,6 +307,69 @@ img.img-style.rounded {
     border: 2px solid #747474;
     border-radius: 2rem;
 }
+
+/* footer styling */
+
+.footer-navigation {
+    color: #fff;
+    height: 10rem;
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    background-color: #363636;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-socials {
+    position: relative;
+    display: block;
+}
+
+.footer-socials {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-socials li {
+    margin-right: 1rem;
+}
+
+.footer-socials img:hover,
+.footer-socials img:focus {
+    box-shadow: 0.5px 0.5px 2px 2px #363636;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.email-link:hover,
+.email-link:focus {
+    cursor: pointer;
+    color: #363636;
+    text-decoration: underline;
+}
+
+.contact-me .nav-style {
+    color: #5C9EAD;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+
 
 /* media queries */
 
