@@ -507,11 +507,7 @@ a.card {
     .row2 {
         flex-direction: column;
     }
-
-    .card {
-        min-width: 500px;
-        text-align: center;
-    }
+    
 }
 
 @media only screen and (min-width:1024px) {
