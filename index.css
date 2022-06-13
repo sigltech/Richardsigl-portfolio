@@ -299,6 +299,10 @@ img.img-style.rounded {
     opacity: 0.5;
 }
 
+a.card {
+    display: block;
+}
+
 .card-section {
     display: flex;
     justify-content: space-around;
