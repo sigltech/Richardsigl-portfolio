@@ -10,11 +10,6 @@ body {
     padding: 0;
 }
 
-a:hover,
-a:focus {
-    color: #363636;
-}
-
 a {
     color: #5C9EAD;
     font-weight: 700;
@@ -289,6 +284,10 @@ img.img-style.rounded {
     box-shadow: 0.5px 5px 40px 25px #3f3f3f;
 }
 
+.card-content:hover {
+    cursor: pointer;
+}
+
 .card.card-title {
     margin-top: 2rem;
 }
@@ -315,9 +314,15 @@ a.card {
 .card-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin: 4rem auto;
 }
+
+/* a.card:hover,
+a.card.card-image:hover,
+a.card.card-content:hover {
+    cursor: pointer;
+} */
 
 .content {
     height: inherit;
@@ -507,7 +512,7 @@ a.card {
     .row2 {
         flex-direction: column;
     }
-    
+
 }
 
 @media only screen and (min-width:1024px) {
